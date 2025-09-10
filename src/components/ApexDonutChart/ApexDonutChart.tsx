@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import Chart from "react-apexcharts";
-import type { TransactionModel } from "../models/transaction.model";
+import type { TransactionModel } from "../../models/transaction.model";
 
 type Props = {
     transactions: TransactionModel[];

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import GraphColumn from "../../components/GraphColumn";
 import { useTransaction } from "../../hook/useTransaction";
-import { ApexDonutChart } from "../../components/ApexDonutChart";
-import { ApexLineChart } from "../../components/ApexLineChart";
+import { ApexDonutChart } from "../../components/ApexDonutChart/ApexDonutChart";
+import { ApexLineChart } from "../../components/ApexLineChart/ApexLineChart";
+import GraphColumn from "../../components/GraphColumn/GraphColumn";
 
 export default function Home() {
   const { transactionsArray } = useTransaction()

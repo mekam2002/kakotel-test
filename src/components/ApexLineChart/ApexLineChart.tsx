@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import type { TransactionModel } from "../models/transaction.model";
+import type { TransactionModel } from "../../models/transaction.model";
 import Chart from "react-apexcharts";
 
 type Props = {
@@ -45,5 +45,5 @@ export function ApexLineChart({ transactions, groupBy = "day", positiveAs = "cre
         tooltip: { y: { formatter: val => String(val) } },
     };
 
-    return <Chart options={options} series={series} type="line" height={320} />;
+    return <Chart data-testid="apexchart-svg"  options={options} series={series} type="line" height={320} />;
 }
