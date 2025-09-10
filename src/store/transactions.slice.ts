@@ -10,8 +10,11 @@ const transactionSlice = createSlice({
     name: 'transaction',
     initialState,
     reducers: {
-        initTransaction(state, { payload }) {
-            state.userData = payload;
+        initTransaction(state, action) {
+            const payload = action.payload;
+            for (const event of payload) {
+                state[event.id] = event;
+            }
         },
     }
 });

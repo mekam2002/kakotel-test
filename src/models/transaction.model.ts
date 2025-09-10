@@ -8,7 +8,7 @@ export interface TransactionModel {
     method?: "card" | "mobile_money" | "bank_transfer" | "cash";
     description?: string;
     reference?: string;
-    createdAt: Date;
-    updatedAt?: Date;
+    createdAt: Date | string;
+    updatedAt?: Date | string;
     metadata?: Record<string, any>;
 }
