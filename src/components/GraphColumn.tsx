@@ -64,7 +64,10 @@ export default function GraphColumn({
     };
 
     return (
-        <div className="w-full p-2 bg-white rounded-lg shadow-sm">
+        <div className="w-full p-2 bg-white rounded-lg shadow-sm"
+            style={{
+                marginBottom: 100
+            }}>
             <Chart options={options} series={series} type="bar" height={360} />
         </div>
     );
