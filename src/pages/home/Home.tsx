@@ -1,6 +1,13 @@
+import GraphColumn from "../../components/GraphColumn";
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <GraphColumn
+        groupBy="day"
+        positiveAs="credit"
+        transactions={[]}
+      />
+    </div>
   )
 }
