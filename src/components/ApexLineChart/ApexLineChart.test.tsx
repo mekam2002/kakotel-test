@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import type { TransactionModel } from "../../models/transaction.model";
 import { ApexLineChart } from "./ApexLineChart";
+import '@testing-library/jest-dom';
 
 const mockTransactions: TransactionModel[] = [
     { id: "1", userId: "u1", type: "credit", amount: 100, currency: "XAF", status: "success", createdAt: "2025-09-01" },
